@@ -1,5 +1,5 @@
-Library Management System (C++ OOPS)
-Overview
+📚 Library Management System (C++ OOPS)
+🚀 Overview
 
 A console-based Library Management System built using C++ and Object-Oriented Programming (OOPS) principles.
 
@@ -15,29 +15,15 @@ Returning books
 
 Managing members
 
-Tech Stack
+The main goal of this project is to practice:
 
-Language: C++17
+->OOPS design
+->Encapsulation
+->Modular architecture (.h / .cpp separation)
+->Clean code practices
+->Git workflow & code reviews
 
-Compiler: MinGW g++
-
-IDE: VS Code
-
-Concepts Used:
-
-Classes & Objects
-
-Encapsulation
-
-Abstraction
-
-STL (vector)
-
-Modular programming
-
-File structure separation
-
-Project Structure	
+📂 Project Structure
 
 LibraryMngSys/
 │
