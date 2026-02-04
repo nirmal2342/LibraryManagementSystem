@@ -43,3 +43,24 @@ LibraryMngSys/
 │   ├── members.txt
 │
 └── README.md
+
+⚙️ Features
+
+✔ Add new books
+✔ View all books
+✔ Issue books to members
+✔ Return books
+✔ Track availability
+✔ Member book limits
+✔ Clean menu-driven CLI
+✔ Modular code structure
+
+🖥 Console UI Preview
+===== Library Menu =====
+1. Add Book
+2. Show Books
+3. Issue Book
+4. Return Book
+5. Exit
+Enter choice:
+
