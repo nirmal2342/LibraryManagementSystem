@@ -19,5 +19,4 @@ public:
     void returnBook();
 
     void display();
-    void return();
 };
