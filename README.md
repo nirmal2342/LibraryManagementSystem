@@ -1,101 +1,161 @@
-📚 Library Management System (C++ | OOPS)
-🚀 Project Overview
-This project is a console-based Library Management System developed using C++ and Object-Oriented Programming (OOPS) principles.It simulates basic real-world library operations such as:
+# 📚 Library Management System (C++ | OOPS)
 
-Adding books
-Viewing books
-Issuing books
-Returning books
-Managing members
+## 🚀 Project Overview
+This project is a **console-based Library Management System** developed using **C++** and **Object-Oriented Programming (OOPS)** principles.  
+It simulates basic real-world library operations such as:
 
+- Adding books  
+- Viewing books  
+- Issuing books  
+- Returning books  
+- Managing members  
+
+### 🎯 Objective
 The main objective of this project is to practice:
 
-OOPS design
-Encapsulation
-Modular programming (.h / .cpp separation)
-Clean architecture
-Git workflow & code reviews
+- OOPS design  
+- Encapsulation  
+- Modular programming (`.h / .cpp` separation)  
+- Clean architecture  
+- Git workflow & code reviews  
 
-🛠 Tech Stack
+---
 
-Language: C++
-Standard: C++17
-Compiler: g++ (MinGW or any GCC)
-IDE: VS Code / Any C++ IDE
-STL: vector, string, iostream
+## 🛠 Tech Stack
 
-📂 Project Structure
+| Component | Technology |
+|----------|------------|
+| Language | C++ |
+| Standard | C++17 |
+| Compiler | g++ (MinGW or GCC) |
+| IDE | VS Code / Any C++ IDE |
+| STL Used | vector, string, iostream |
+
+---
+
+## 📂 Project Structure
+```
 LibraryMngSys/
 │
 ├── include/
-│   ├── Book.h
-│   ├── Member.h
-│   ├── Library.h
+│ ├── Book.h
+│ ├── Member.h
+│ ├── Library.h
 │
 ├── src/
-│   ├── Book.cpp
-│   ├── Member.cpp
-│   ├── Library.cpp
-│   ├── main.cpp
+│ ├── Book.cpp
+│ ├── Member.cpp
+│ ├── Library.cpp
+│ ├── main.cpp
 │
 ├── data/
-│   └── (reserved for future file storage)
+│ └── (reserved for future file storage)
 │
 └── README.md
+```
 
-🧠 Class Design
-Book-
-id
-title
-author
-availability status
-issue/return functionality
+---
 
-Member-
-memberId
-name
-issued books list
-book limit
-issue/return tracking
+## 🧠 Class Design
 
-Library-
-manages all books and members
-add/search/display operations
-issue/return coordination
-acts as system controller
-main.cpp
-console menu
-user interaction
-calls Library methods
+### 📘 Book Class
+Represents a book in the library.
 
-⚙️ Features
-Add new books
-View all books
-Issue books
-Return books
-Track availability
-Member book limits
-Menu-driven console interface
-Modular and maintainable code
+**Attributes:**
+- `id`
+- `title`
+- `author`
+- `availability status`
 
-🖥 Sample Console Output
+**Responsibilities:**
+- Issue book  
+- Return book  
+- Display book info  
+
+---
+
+### 👤 Member Class
+Represents a library member.
+
+**Attributes:**
+- `memberId`
+- `name`
+- `issued books list`
+- `book limit`
+
+**Responsibilities:**
+- Track issued books  
+- Enforce book limits  
+- Issue and return tracking  
+
+---
+
+### 🏛 Library Class
+Acts as the system controller.
+
+**Responsibilities:**
+- Manage all books and members  
+- Add/search/display books  
+- Issue and return coordination  
+- Central system logic  
+
+---
+
+### 🖥 main.cpp
+Handles:
+
+- Console menu  
+- User interaction  
+- Calls Library class methods  
+
+---
+
+## ⚙️ Features
+
+- ✅ Add new books  
+- ✅ View all books  
+- ✅ Issue books  
+- ✅ Return books  
+- ✅ Track availability  
+- ✅ Member book limits  
+- ✅ Menu-driven console interface  
+- ✅ Modular and maintainable code  
+
+---
+
+## 🖥 Sample Console Output
+
 ========= Library Menu ========
-1. Add Book
-2. Show Books
-3. Issue Book
-4. Return Book
-5. Exit
+
+Add Book
+Show Books
+Issue Book
+Return Book
+Exit
+
 Enter choice:
 
-▶️ How to Run
-Step 1 – Compile
 
-From project root:
+---
+
+## ▶️ How to Run
+
+### Step 1 – Compile
+
+From project root directory:
+
+```bash
 g++ src/*.cpp -Iinclude -o library
-
 Step 2 – Run
 Windows:
 library.exe
 
 Mac/Linux:
 ./library
+
+📌 Future Improvements
+File handling for persistent storage
+Search functionality
+Fine calculation
+Admin & user roles
+GUI version
